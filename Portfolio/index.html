@@ -313,11 +313,11 @@
                             Get started with a consultation today.
                         </h2>
                         <p class="lead">
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis rem, esse doloribus sint
-                            eaque at debitis enim vitae minus expedita ratione dignissimos sit nostrum optio sequi. Ipsa
-                            at beatae quam.
+                            Need a reliable solution for your next project? As a software engineer and web developer, I create tailored apps, websites, and digital systems that work seamlessly. Let’s connect for a consultation and turn your ideas into functional, high-performing solutions.
                         </p>
-                        <a href="contact.html" class="btn btn--primary">Let's Work Together</a>
+                        <div class="s-about__content-btn grid-section-split__bottom">
+                            <a href="about.html" class="btn btn--stroke u-fullwidth">Let's Work Together </a>
+                        </div>
                     </div>
 
                 </div>
@@ -576,14 +576,28 @@
     <!-- Java Script
     ================================================== -->
     <script src="js/plugins.js"></script>
-    <script src="js/main.js"></script>
-    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>  
-    <script>
-      var typed = new Typed('#element', {
-       strings: ['','','','Web Developer ','Software Engineer'],
-        typeSpeed: 130,
-      });
-    </script>
+<script src="js/main.js"></script>
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>  
+<script>
+  // Array to hold initial strings
+  var stringsArray = ['Web Developer', 'Software Engineer'];
+
+  // Initialize the strings for Typed.js and repeat 10 times
+  var typedStrings = [];
+  for (var i = 0; i < 100; i++) {
+    for (var j = 0; j < stringsArray.length; j++) {
+      typedStrings.push(stringsArray[j]);
+    }
+  }
+
+  // Create a new Typed instance
+  var typed = new Typed('#element', {
+    strings: typedStrings,
+    typeSpeed: 110,
+  });
+</script>
+
+
 
 </body>
 
